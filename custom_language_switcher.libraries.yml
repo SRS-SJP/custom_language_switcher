@@ -1,0 +1,5 @@
+custom_language_switcher.styles:
+  version: 1.x
+  css:
+    theme:
+      css/custom-language-switcher.css: {}

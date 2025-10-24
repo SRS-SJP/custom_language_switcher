@@ -1,0 +1,7 @@
+custom_language_switcher.display:
+  path: '/custom-language-switcher'
+  defaults:
+    _title: 'Custom Language Switcher'
+    _controller: '\Drupal\custom_language_switcher\Controller\CustomLanguageSwitcherController::display'
+  requirements:
+    _permission: 'access content'

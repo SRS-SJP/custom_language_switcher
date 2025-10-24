@@ -1,0 +1,5 @@
+name: 'Custom Language Switcher'
+type: module
+description: 'A module to display a custom language switcher that only displays the un-selected language as an option.'
+core_version_requirement: ^8 || ^9 || ^10
+package: Custom

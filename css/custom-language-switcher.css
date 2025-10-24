@@ -1,0 +1,18 @@
+/* Styling for Language switcher to make image and link appear side by side */
+
+.custom-language-switcher img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0;  
+    margin-right: 5px;
+    list-style-type: none;  
+}
+
+/* a.language-link */
+.custom-language-switcher a {
+    color: #ffffff;
+    display: inline;
+    margin-left: 0;
+}
+
+/* end of language switcher styling*/

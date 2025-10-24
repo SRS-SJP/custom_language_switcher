@@ -1,0 +1,22 @@
+{#
+  Template for Custom Language Switcher output
+#}
+{{ attach_library('custom_language_switcher/custom_language_switcher.styles') }}
+<div class="custom-language-switcher">
+<ul class="menu menu--main">
+    {% set assets_path = base_path ~ 'modules/custom/custom_language_switcher/assets' %}
+    {% set languagePrefixes = ["cy", "en"] %}
+    {% set languageNames = ["Welsh", "English"] %}
+    {% set languageDispPrefixes = ["/cy", ""] %}
+    {% set url = path('<current>') %}
+    {#url = {{ url }}#}
+    {#<p>Current language: {{ text_to_display }}</p>#}
+    <li class="menu-item">
+    {% if (text_to_display == 'Welsh') or (text_to_display == 'cy')  %}
+        <a href="{{ url|replace({'\/cy': ''}) }}" class="language-link" hreflang="en" data-drupal-link-system-path="{{ url|replace({'\/cy': ''}) }}"><img src="{{ assets_path }}/gbflag.png" alt="Switch to English Language" width="24px" height="24px"><span>English</span></a>
+    {%else%}
+        <a href="/cy{{ url }}" class="language-link" hreflang="cy" data-drupal-link-system-path="/cy{{ url }}"><img src="{{ assets_path }}/welshflag.png" alt="Switch to Welsh Language" width="24px" height="24px"><span>Cymraeg</span></a>
+    {% endif %}
+    </li>
+    </ul>
+</div>
